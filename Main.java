@@ -50,7 +50,7 @@ public class Main {
             }
             br.close();
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "File not found!", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "File not found", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
 
@@ -120,7 +120,7 @@ public class Main {
                 }
                 br.close();
             } catch (Exception e) {
-                JOptionPane.showMessageDialog(null, "File not found!", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "File not found", "Error", JOptionPane.ERROR_MESSAGE);
                 System.exit(1);
             }
 
@@ -170,11 +170,11 @@ public class Main {
 
             if (plate.equals("")) {
                 JOptionPane.showMessageDialog(null,
-                        "You cannot have a blank license plate!",
+                        "You cannot have a blank license plate",
                         "Error", JOptionPane.ERROR_MESSAGE);
             } else if (plate.length() != 7 || plate.charAt(3) != '-') {
                 JOptionPane.showMessageDialog(null,
-                        "Invalid license plate!",
+                        "Invalid license plate",
                         "Error", JOptionPane.ERROR_MESSAGE);
             } else {
                 plate = plate.toUpperCase();
